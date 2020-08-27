@@ -154,7 +154,7 @@ for(let cidade of estadosNe){
          deve ser inserido com unshift(), para manter a ordem alfabética. 
          O terceiro Estado (Rio Grande do Norte) deve ser inserido entre os dois 
          já existentes, e assim por diante.
-
+ 
 */
 
 let novoVetor = []
