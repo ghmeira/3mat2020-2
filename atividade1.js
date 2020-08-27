@@ -123,7 +123,7 @@ let densidade = (a, b) => b / a
 
 for(let i = 1; i <= 9; i++){
 
-    estadosNe[i]["densidade demografica"] = densidade(estadosNe[i][area], estadosNe[i][populacao])
+    estadosNe[i]["densidade demografica"] = densidade(estadosNe[i].area, estadosNe[i].populacao)
 }
 
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
