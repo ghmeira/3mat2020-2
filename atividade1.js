@@ -121,9 +121,10 @@ let densidade = (a, b) => b / a
 
 */
 
-for(let i = 1; i <= 9; i++){
+for(i = 0; i < estadosNe.length; i++){
 
-    estadosNe[i]["densidade demografica"] = densidade(estadosNe[i][area], estadosNe[i][populacao])
+    estadosNe[i]["densidade demografica"] = (densidade(estadosNe[i].area, estadosNe[i].populacao))
+    delete estadosNe[i].sigla
 }
 
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
@@ -132,7 +133,7 @@ for(let i = 1; i <= 9; i++){
 */
 
 let funcao = objeto =>{ for(let prop in objeto){
-                            console.log(prop)
+                            console.log(prop + " : " + objeto[prop])
                         }}
 
 /* 5) Percorra o vetor estadosNe usando for..of. Para cada objeto no vetor,
@@ -168,3 +169,5 @@ novoVetor.splice(1, 0, estado6.nome)
 novoVetor.splice(4, 0, estado7.nome)
 novoVetor.splice(2, 0, estado8.nome)
 novoVetor.splice(1, 0, estado9.nome)
+
+console.log(novoVetor)
