@@ -122,9 +122,10 @@ let densidade = (a, b) => b / a
 */
 
 for(i = 0; i < estadosNe.length; i++){
-
+    
     estadosNe[i]["densidade demografica"] = (densidade(estadosNe[i].area, estadosNe[i].populacao))
     delete estadosNe[i].sigla
+
 }
 
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
